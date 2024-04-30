@@ -1,0 +1,106 @@
+<html>
+
+
+<head>
+    <title>
+        my website
+    </title>
+
+    <style>
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+
+</head>
+
+   <body style="background-color: rgb(255, 245, 231)">
+        <!-- 
+background-color: rgb(255, 245, 231)
+            <h1>
+            Top 10 reasons why I hate you
+            </h1>
+        
+        <p>
+            <h2>
+            number 1
+            </h2> 
+        </p>
+
+        <p>
+        everytime you message me, i look like this...   
+        </p>
+
+
+        --> 
+        <!--
+        <div class="row">
+            <div class="image-container"><img id="picture1" src="img/kokoangry.png" width="200" height="120"/></div>
+            <div class="image-container"><img id="picture2" src="img/kokosad.png" width="200" height="120"/></div>
+            <div class="image-container"><img id="picture3" src="img/kokohappy.png" width="200" height="120"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="picture4" src="img/kokoangry.png" width="200" height="120"/></div>
+            <div class="image-container"><img id="picture5" src="img/kokosad.png" width="200" height="120"/></div>
+            <div class="image-container"><img id="picture6" src="img/kokohappy.png" width="200" height="120"/></div>
+        </div>
+        
+        -->
+
+        <script>
+            var sound1 = new buzz.sound("sound/ugh.wav");
+            var sound2 = new buzz.sound("sound/hai.mp3");
+            var sound3 = new buzz.sound("sound/angry.wav");
+            var sound4 = new buzz.sound("sound/yeah.mp3");
+            var sound5 = new buzz.sound("sound/cry.wav");
+            var sound6 = new buzz.sound("sound/sigh.wav");
+            var sound7 = new buzz.sound("sound/woah.wav");
+            var sound8 = new buzz.sound("sound/huh.mp3");
+            var sound9 = new buzz.sound("sound/laugh.mp3");
+            
+            window.onload = function() {
+                document.getElementById('depress').addEventListener('mouseover', function () {sound1.play();});
+                document.getElementById('happy').addEventListener('mouseover', function () {sound2.play();});
+                document.getElementById('mad').addEventListener('mouseover', function () {sound3.play();});
+                document.getElementById('excite').addEventListener('mouseover', function () {sound4.play();});
+                document.getElementById('sad').addEventListener('mouseover', function () {sound5.play();});
+                document.getElementById('wtf').addEventListener('mouseover', function () {sound6.play();});
+                document.getElementById('surprise').addEventListener('mouseover', function () {sound7.play();});
+                document.getElementById('confuse').addEventListener('mouseover', function () {sound8.play();});
+                document.getElementById('embarass').addEventListener('mouseover', function () {sound9.play();});
+            };
+
+        </script>
+
+        <div class="row">
+            <div class="image-container"><img id="happy" src="img/kokohappy1.png" width="205" height="130" onmouseover="this.src='img/kokohappy2.png';" onmouseout="this.src='img/kokohappy1.png';"/></div>
+            <div class="image-container"><img id="sad" src="img/kokosad1.png" width="200" height="124" onmouseover="this.src='img/kokosad2.png';" onmouseout="this.src='img/kokosad1.png';"/></div>
+            <div class="image-container"><img id="mad" src="img/kokomad1.png" width="200" height="124" onmouseover="this.src='img/kokomad2.png';" onmouseout="this.src='img/kokomad1.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="depress" src="img/kokodepress1.png" width="210" height="130" onmouseover="this.src='img/kokodepress2.png';" onmouseout="this.src='img/kokodepress1.png';"/></div>
+            <div class="image-container"><img id="excite" src="img/kokoexcite1.png" width="210" height="130" onmouseover="this.src='img/kokoexcite2.png';" onmouseout="this.src='img/kokoexcite1.png';"/></div>
+            <div class="image-container"><img id="wtf" src="img/kokowtf1.png" width="200" height="124" onmouseover="this.src='img/kokowtf2.png';" onmouseout="this.src='img/kokowtf1.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="surprise" src="img/kokosurprise1.png" width="210" height="130" onmouseover="this.src='img/kokosurprise2.png'; "onmouseout="this.src='img/kokosurprise1.png';"/></div>
+            <div class="image-container"><img id="confuse" src="img/kokoconfuse1.png" width="210" height="124" onmouseover="this.src='img/kokoconfuse2.png';" onmouseout="this.src='img/kokoconfuse1.png';"/></div>
+            <div class="image-container"><img id="embarass" src="img/kokoembarass1.png" width="200" height="124" onmouseover="this.src='img/kokoembarass2.png';" onmouseout="this.src='img/kokoembarass1.png';"/></div>
+        </div>
+
+
+    </body>
+
+</html>
